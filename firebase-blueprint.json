@@ -1,0 +1,53 @@
+{
+  "entities": {
+    "message": {
+      "title": "Visitor Message",
+      "description": "A guestbook visitor comment or message.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier of the message"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name or pseudonym of the visitor"
+        },
+        "content": {
+          "type": "string",
+          "description": "Text content of the visitor's note"
+        },
+        "inkColor": {
+          "type": "string",
+          "description": "Hex code or selected color of the written text"
+        },
+        "stamp": {
+          "type": "string",
+          "description": "Stamp emoji decoration added by the visitor"
+        },
+        "timestamp": {
+          "type": "string",
+          "description": "Yyyy-MM-dd formatted date string of the comment"
+        },
+        "visitorId": {
+          "type": "string",
+          "description": "A persistent unique ID generated per visitor browser to allow deleting own messages"
+        }
+      },
+      "required": [
+        "name",
+        "content",
+        "inkColor",
+        "stamp",
+        "timestamp",
+        "visitorId"
+      ]
+    }
+  },
+  "firestore": {
+    "/messages/{messageId}": {
+      "schema": "message",
+      "description": "Global visitor ledger messages left in Penny's Gallery"
+    }
+  }
+}

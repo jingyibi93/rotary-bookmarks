@@ -1,8 +1,6 @@
 {
-  "name": "Remix: Rotary Bookmarks",
-  "description": "A minimalist personal portfolio featuring a 3D rotating bookmark selector that pauses on hover and opens project details.",
+  "name": "Minimalist Cabinet Drawer Portfolio",
+  "description": "A minimalist gallery-inspired portfolio presenting Objects, Images, Fragments, Notes, and Experiments via interactive table drawers.",
   "requestFramePermissions": [],
-  "majorCapabilities": [
-    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
-  ]
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
